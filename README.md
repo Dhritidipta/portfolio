@@ -2,7 +2,7 @@
 
 #### 
 
-#### Sobre o autor
-###### Héber Leonard
-###### heber.leonard2@gmail.com
-###### Idéias? Fala comigo.
+#### About the Author
+###### Dhritidipta Roy
+###### dhritidiptaroy.work@gmail.com
+###### Ideas? Talk to me.
