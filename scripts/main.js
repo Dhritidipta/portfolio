@@ -44,7 +44,7 @@ function new_line(){
   p.setAttribute("class", "path")
   p.textContent = "# user";
   span1.textContent = " in";
-  span2.textContent = " ~/heber-leonard";
+  span2.textContent = " ~/dhritidipta";
   p.appendChild(span1);
   p.appendChild(span2);
   app.appendChild(p);
@@ -79,20 +79,24 @@ async function getInputValue(){
   }
   else if(value === "projects"){
     trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
+    createText("<a href='https://github.com/dhritidipta' target='_blank'><i class='fab fa-github white'></i> github.com/dhritidipta</a>")
   }
   else if(value === "about me"){
     trueValue(value);
-    createText("Oi, meu nome é Héber ;)")
-    createText("Desenvolvedor atualmente focado em todo o ecossistema Javascript. Utilizando principalmente a stack <span class='blue'>Node, React e React Native </span>por permitir criar aplicações de forma descomplicada e produtiva.")
+    createText("Hi, my name is Dhritidipta ;)")
+    createText(`<pre style="white-space: pre-wrap; overflow: visible;">
+    Developer with a solid background in designing and scaling enterprise applications. Over the past few years, I’ve worked with leading organizations like Hyland Software and UST, where I led key initiatives across .NET development, CI/CD automation, and plugin engineering for desktop and web environments.
+    From automating legacy workflows to building tools adopted across teams, I focus on shipping clean, maintainable code that solves real business problems. My tech stack includes .NET, SQL Server, ASP.NET Core, Jenkins, and a healthy obsession with DevOps best practices.
+    When I'm not debugging code, I’m either playing outdoor sports, traveling to new places, or deep into a playlist that makes the world disappear.
+    </pre>`)
   }
   else if(value === "social -a"){
     trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
-    createText("<a href='https://www.linkedin.com/in/heber-leonard/' target='_blank'><i class='fab fa-linkedin-in white'></i> linkedin.com/in/heber-leonard</a>")
-    createText("<a href='https://www.instagram.com/heber_leonard/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/heber_leonard</a>")
+    createText("<a href='https://github.com/dhritidipta' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
+    createText("<a href='https://www.linkedin.com/in/dhritidipta-roy/' target='_blank'><i class='fab fa-linkedin-in white'></i> linkedin.com/in/heber-leonard</a>")
+    createText("<a href='https://www.instagram.com/roy.dhritidipta/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/roy.dhritidipta</a>")
   }
-  else if(value === "social"){
+  else if(value === "social" || value === "socials"){
     trueValue(value);
     createText("Didn't you mean: social -a?")
   }
@@ -100,6 +104,7 @@ async function getInputValue(){
   else if(value === "clear"){
     document.querySelectorAll("p").forEach(e => e.parentNode.removeChild(e));
     document.querySelectorAll("section").forEach(e => e.parentNode.removeChild(e));
+    createCode("all", "See all commands.");
   }
   else{
     falseValue(value);
